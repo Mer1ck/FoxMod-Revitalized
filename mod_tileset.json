@@ -1,0 +1,48 @@
+[
+  {
+    "type": "mod_tileset",
+    "compatibility": [ "UNDEAD_PEOPLE_BASE", "MSX++DEAD_PEOPLE", "UNDEAD_PEOPLE" ],
+    "tiles-new": [
+      {
+        "file": "custom_gfx.png",
+        "sprite_offset_y":-17,
+        "tiles": [
+          { "id": "overlay_mutation_FOX_EARS", "fg": 0, "rotates": false }
+        ]
+      },
+	  {
+		"file": "custom_gfx.png",
+		"tiles": [
+		  { "id": "overlay_mutation_FOX_MUZZLE", "fg": 1, "rotates": false },
+		  { "id": "overlay_mutation_KITSUNE_MUZZLE", "fg": 1, "rotates": false },
+		  { "id": "overlay_mutation_FOX_TWOTAIL", "fg": 6, "rotates": false },
+		  { "id": "overlay_mutation_FOX_THREETAIL", "fg": 5, "rotates": false },
+		  { "id": "overlay_mutation_FOX_FOURTAIL", "fg": 4, "rotates": false },
+		  { "id": "mon_foxfire", "fg": [{ "weight": 3, "sprite": 2}, {"weight": 5, "sprite": 3}], "rotates": false },
+		  { "id": "overlay_male_mutation_KITSUNE_FUR", "fg": 9, "rotates": false },
+		  { "id": "overlay_male_mutation_GLAM_FUR", "fg": 11, "rotates": false},
+		  { "id": "overlay_female_mutation_KITSUNE_FUR", "fg": 8, "rotates": false },
+		  { "id": "overlay_female_mutation_GLAM_FUR", "fg": 10, "rotates": false}
+		  ]
+	  }
+    ]
+  },
+  {
+	"type": "overlay_order",
+	"overlay_ordering" :
+	[
+		{ 
+		  "id": [ "FOX_MUZZLE", "KITSUNE_MUZZLE" ],
+		  "order": 7000
+		},
+		{
+		  "id": [ "FOX_EARS" ],
+		  "order": 5500
+		},
+		{
+		  "id": [ "KITSUNE_FUR", "GLAM_FUR" ],
+		  "order": 1500
+		}
+	]		
+  }
+]
