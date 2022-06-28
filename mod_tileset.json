@@ -22,7 +22,11 @@
 		  { "id": "overlay_male_mutation_KITSUNE_FUR", "fg": 9, "rotates": false },
 		  { "id": "overlay_male_mutation_GLAM_FUR", "fg": 11, "rotates": false},
 		  { "id": "overlay_female_mutation_KITSUNE_FUR", "fg": 8, "rotates": false },
-		  { "id": "overlay_female_mutation_GLAM_FUR", "fg": 10, "rotates": false}
+		  { "id": "overlay_female_mutation_GLAM_FUR", "fg": 10, "rotates": false},
+		  { "id": "mon_fox_twotail", "fg": 16, "rotates": false},
+		  { "id": "mon_fox_threetail", "fg": 17, "rotates": false},
+		  { "id": "mon_fox_fourtail", "fg": 18, "rotates": false},
+		  { "id": "mon_fox_fivetail", "fg": 19, "rotates": false}
 		  ]
 	  }
     ]
