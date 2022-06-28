@@ -11,20 +11,23 @@
     "use_action": { "type": "learn_spell", "spells": [ "foxs_cunning", "obfuscated_body", "summon_wisps" ] }
   },
   {
-    "id": "novels",
     "type": "item_group",
-    "items": [ [ "fox_book", 50 ] ]
+	"id": "novels",
+	"copy-from": "novels",
+    "extend": { "items": [ [ "fox_book", 5 ] ] }
   },
   {
-    "id": "spellbook_tier_0",
     "type": "item_group",
-    "items": [ [ "fox_book", 30 ] ]
+	"id": "spellbook_tier_0",
+	"copy-from": "spellbook_tier_0",
+    "extend": { "items": [ [ "fox_book", 35 ] ] }
   },
   {
-    "id": "shelter_supplies",
     "type": "item_group",
+	"id": "shelter_supplies",
+	"copy-from": "shelter_supplies",
     "subtype": "collection",
-    "items": [ [ "fox_plush", 2 ] ]
+    "extend": { "items": [ [ "fox_plush", 2 ] ] }
   },
   {
     "type": "profession",
