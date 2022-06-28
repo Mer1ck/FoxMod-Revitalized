@@ -26,7 +26,9 @@
 		  { "id": "mon_fox_twotail", "fg": 16, "rotates": false},
 		  { "id": "mon_fox_threetail", "fg": 17, "rotates": false},
 		  { "id": "mon_fox_fourtail", "fg": 18, "rotates": false},
-		  { "id": "mon_fox_fivetail", "fg": 19, "rotates": false}
+		  { "id": "mon_fox_fivetail", "fg": 19, "rotates": false},
+		  { "id": "fox_plush", "fg": 12, "rotates": false},
+		  { "id": "magic_fox_plush", "fg": 13, "rotates": false}
 		  ]
 	  }
     ]
