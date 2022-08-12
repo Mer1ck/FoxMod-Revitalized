@@ -78,6 +78,12 @@
     "extend": { "category": [ "KITSUNE" ] }
   },
   {
+	"type": "mutation",
+	"id": "CARNIVORE",
+	"copy-from": "CARNIVORE",
+	"extend": { "category": [ "KITSUNE" ] }
+  },
+  {
     "type": "mutation",
     "id": "PRED1",
     "copy-from": "PRED1",
@@ -201,6 +207,6 @@
     "type": "mutation",
     "id": "PYROMANIA",
     "copy-from": "PYROMANIA",
-    "extend": { "category": [ "KITSUNE" ] }
+    "extend": { "category": [ "KITSUNE", "MANATOUCHED" ] }
   }
 ]

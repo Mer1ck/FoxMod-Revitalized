@@ -9,15 +9,6 @@
 	"vitamin": "mutagen_kitsune"
   },
   {
-    "type": "mutation_category",
-    "id": "KITSUNE_WIP",
-    "name": "Kitsune WIP",
-    "threshold_mut": "THRESH_FOX",
-    "mutagen_message": "You feel a warmth grow inside you. It feels... wrong.",
-    "memorial_message": "Found an experimental way of life.",
-	"vitamin": "mutagen_kitsune"
-  },
-  {
     "type": "mutation",
     "id": "THRESH_FOX",
     "name": { "str": "Kitsune" },
@@ -120,30 +111,6 @@
       "base_damage": { "damage_type": "cut", "amount": 4 }
     },
 	"flags": [ "KITSUNE_MARKER_FACE" ]
-  },
-  {
-    "type": "mutation",
-    "id": "FOX_ONETAIL",
-    "name": { "str": "Kitsune Tail" },
-    "points": 2,
-    "visibility": 7,
-    "description": "You have a single long, fluffy tail.  You can feel its power flowing through you.  Prevents wearing non-fabric pants.",
-    "types": [ "TAIL" ],
-    "prereqs": [ "TAIL_FLUFFY" ],
-    "category": [ "KITSUNE_WIP" ],
-    "restricts_gear": [ "leg_l", "leg_r" ],
-    "encumbrance_covered" : [
-      [ "leg_l", 4 ],
-      [ "leg_r", 4 ]
-    ],
-    "threshreq": [ "THRESH_FOX" ],
-    "allow_soft_gear": true,
-    "social_modifiers": { "lie": -10, "persuade": 5 },
-    "dodge_modifier": 5,
-    "spells_learned": [ [ "summon_foxfire", 0 ] ],
-    "mana_modifier": 100,
-    "mana_regen_multiplier": 1.1,
-    "mana_multiplier": 1.1
   },
   {
     "type": "mutation",
