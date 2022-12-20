@@ -235,5 +235,17 @@
     "anger_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED" ],
     "fear_triggers": [ "SOUND", "PLAYER_CLOSE" ],
     "flags": [ "SEES", "HEARS", "SMELLS", "ANIMAL", "PATH_AVOID_DANGER_1", "WARM", "HIT_AND_RUN", "KEENNOSE" ]
-  }
+  },
+  {
+	"type": "monstergroup",
+	"name": "GROUP_FOREST",
+	"is_animal": true,
+	"monsters": [
+		{ "monster": "mon_fox_twotail", "weight": 4, "cost_multiplier": 0 },
+		{ "monster": "mon_fox_twotail", "weight": 8, "cost_multiplier": 0, "conditions": [ "DAWN", "DUSK" ] },
+		{ "monster": "mon_fox_threetail", "weight": 1, "cost_multiplier": 0 },
+		{ "monster": "mon_fox_threetail", "weight": 2, "cost_multiplier": 0, "conditions": [ "DAWN", "DUSK" ] },
+		{ "monster": "mon_fox_fourtail", "weight": 1, "cost_multiplier": 0, "conditions": [ "DAWN", "DUSK" ] }
+	  ]
+   }
 ]
