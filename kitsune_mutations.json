@@ -123,13 +123,10 @@
     "prereqs": [ "TAIL_FLUFFY" ],
     "changes_to": [ "FOX_THREETAIL" ],
     "category": [ "KITSUNE" ],
-    "restricts_gear": [ "leg_l", "leg_r" ],
-    "encumbrance_covered" : [
-      [ "leg_l", 4 ],
-      [ "leg_r", 4 ]
-    ],
-    "threshreq": [ "THRESH_FOX" ],
+    "restricts_gear": [ "leg_hip_l", "leg_hip_r" ],
+    "allowed_items": [ "ALLOWS_TAIL" ],
     "allow_soft_gear": true,
+    "threshreq": [ "THRESH_FOX" ],
     "social_modifiers": { "lie": -15, "persuade": 10 },
     "dodge_modifier": 5,
     "spells_learned": [ [ "summon_foxfire", 0 ] ],
@@ -148,13 +145,10 @@
     "prereqs": [ "FOX_TWOTAIL" ],
     "changes_to": [ "FOX_FOURTAIL" ],
     "category": [ "KITSUNE" ],
-    "restricts_gear": [ "leg_l", "leg_r" ],
-    "encumbrance_covered" : [
-      [ "leg_l", 7 ],
-      [ "leg_r", 7 ]
-    ],
-    "threshreq": [ "THRESH_FOX" ],
+    "restricts_gear": [ "leg_hip_l", "leg_hip_r" ],
+    "allowed_items": [ "ALLOWS_TAIL" ],
     "allow_soft_gear": true,
+    "threshreq": [ "THRESH_FOX" ],
     "social_modifiers": { "lie": -20, "persuade": 15 },
     "dodge_modifier": 5,
     "spells_learned": [ [ "kitsune_firebolt", 0 ] ],
@@ -221,11 +215,8 @@
     "types": [ "TAIL" ],
     "prereqs": [ "FOX_THREETAIL" ],
     "category": [ "KITSUNE" ],
-    "restricts_gear": [ "leg_l", "leg_r" ],
-    "encumbrance_covered" : [
-      [ "leg_l", 10 ],
-      [ "leg_r", 10 ]
-    ],
+    "restricts_gear": [ "leg_hip_l", "leg_hip_r" ],
+    "allowed_items": [ "ALLOWS_TAIL" ],
     "threshreq": [ "THRESH_FOX" ],
     "allow_soft_gear": true,
     "social_modifiers": { "lie": -15, "persuade": 15 },
