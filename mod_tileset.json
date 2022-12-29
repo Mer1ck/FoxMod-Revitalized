@@ -15,20 +15,23 @@
 		"tiles": [
 		  { "id": "overlay_mutation_FOX_MUZZLE", "fg": 1, "rotates": false },
 		  { "id": "overlay_mutation_KITSUNE_MUZZLE", "fg": 1, "rotates": false },
-		  { "id": "overlay_mutation_FOX_TWOTAIL", "fg": 6, "rotates": false },
-		  { "id": "overlay_mutation_FOX_THREETAIL", "fg": 5, "rotates": false },
-		  { "id": "overlay_mutation_FOX_FOURTAIL", "fg": 4, "rotates": false },
+		  { "id": "overlay_mutation_FOX_TAIL", "fg": 15, "rotates": false },
+		  { "id": "overlay_mutation_FOX_TWOTAIL", "fg": 14, "rotates": false },
+		  { "id": "overlay_mutation_FOX_THREETAIL", "fg": 13, "rotates": false },
+		  { "id": "overlay_mutation_FOX_FOURTAIL", "fg": 12, "rotates": false },
+		  { "id": "overlay_mutation_FOX_FIVETAIL", "fg": 11, "rotates": false },
+		  { "id": "overlay_mutation_FOX_SIXTAIL", "fg": 10, "rotates": false },
 		  { "id": "mon_foxfire", "fg": [{ "weight": 3, "sprite": 2}, {"weight": 5, "sprite": 3}], "rotates": false },
-		  { "id": "overlay_male_mutation_KITSUNE_FUR", "fg": 9, "rotates": false },
-		  { "id": "overlay_male_mutation_GLAM_FUR", "fg": 11, "rotates": false},
-		  { "id": "overlay_female_mutation_KITSUNE_FUR", "fg": 8, "rotates": false },
-		  { "id": "overlay_female_mutation_GLAM_FUR", "fg": 10, "rotates": false},
+		  { "id": "overlay_male_mutation_KITSUNE_FUR", "fg": 25, "rotates": false },
+		  { "id": "overlay_male_mutation_GLAM_FUR", "fg": 27, "rotates": false},
+		  { "id": "overlay_female_mutation_KITSUNE_FUR", "fg": 24, "rotates": false },
+		  { "id": "overlay_female_mutation_GLAM_FUR", "fg": 26, "rotates": false},
 		  { "id": "mon_fox_twotail", "fg": 16, "rotates": false},
 		  { "id": "mon_fox_threetail", "fg": 17, "rotates": false},
 		  { "id": "mon_fox_fourtail", "fg": 18, "rotates": false},
 		  { "id": "mon_fox_fivetail", "fg": 19, "rotates": false},
-		  { "id": "fox_plush", "fg": 12, "rotates": false},
-		  { "id": "magic_fox_plush", "fg": 13, "rotates": false}
+		  { "id": "fox_plush", "fg": 28, "rotates": false},
+		  { "id": "magic_fox_plush", "fg": 29, "rotates": false}
 		  ]
 	  }
     ]
