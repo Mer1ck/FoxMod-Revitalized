@@ -124,9 +124,9 @@
     "category": [ "KITSUNE" ],
 	"flags": [ "KITSUNE_MARKER_TAIL" ],
     "spells_learned": [ [ "create_foxflame", 1 ] ],
-    "mana_modifier": 200,
-    "mana_regen_multiplier": 1.2,
-    "mana_multiplier": 1.2
+    "mana_modifier": 100,
+    "mana_regen_multiplier": 1.1,
+    "mana_multiplier": 1.1
   },
   {
     "type": "mutation",
@@ -148,7 +148,33 @@
     "spells_learned": [ [ "summon_foxfire", 1 ] ],
     "mana_modifier": 200,
     "mana_regen_multiplier": 1.2,
-    "mana_multiplier": 1.2
+    "mana_multiplier": 1.2,
+	"active": true,
+	"transform": {
+      "target": "CONCEALED_TWO",
+      "msg_transform": "You feel your magic fade as you withdraw your tails.",
+      "active": false,
+      "moves": 100
+    }
+  },
+  {
+	"type": "mutation",
+	"id": "CONCEALED_TWO",
+	"name": { "str": "Concealed Tails" },
+	"points": 0,
+	"visibility": 0,
+	"description": "You can feel a slight strain as you focus on keeping your tails hidden.",
+	"types": [ "TAIL" ],
+	"valid": false,
+	"mana_regen_modifier": .9,
+	"mana_multiplier": .9,
+	"active": true,
+	"transform": {
+      "target": "FOX_TWOTAIL",
+      "msg_transform": "You breath a sigh of relief as your tails return.",
+      "active": false,
+      "moves": 100
+    }
   },
   {
     "type": "mutation",
@@ -169,7 +195,33 @@
     "dodge_modifier": 5,
     "mana_modifier": 400,
     "mana_regen_multiplier": 1.4,
-    "mana_multiplier": 1.4
+    "mana_multiplier": 1.4,
+	"active": true,
+	"transform": {
+      "target": "CONCEALED_THREE",
+      "msg_transform": "You feel your magic fade as you withdraw your tails.",
+      "active": false,
+      "moves": 100
+    }
+  },
+  {
+	"type": "mutation",
+	"id": "CONCEALED_THREE",
+	"name": { "str": "Concealed Tails" },
+	"points": 0,
+	"visibility": 0,
+	"description": "You can feel a slight strain as you focus on keeping your tails hidden.",
+	"types": [ "TAIL" ],
+	"valid": false,
+	"mana_regen_modifier": .85,
+	"mana_multiplier": .8,
+	"active": true,
+	"transform": {
+      "target": "FOX_THREETAIL",
+      "msg_transform": "You breath a sigh of relief as your tails return.",
+      "active": false,
+      "moves": 100
+    }
   },
   {
     "type": "mutation",
@@ -191,7 +243,33 @@
     "spells_learned": [ [ "kitsune_firebolt", 1 ] ],
     "mana_modifier": 400,
     "mana_regen_multiplier": 1.5,
-    "mana_multiplier": 1.5
+    "mana_multiplier": 1.5,
+	"active": true,
+	"transform": {
+      "target": "CONCEALED_FOUR",
+      "msg_transform": "You feel your magic fade as you withdraw your tails.",
+      "active": false,
+      "moves": 100
+    }
+  },
+  {
+	"type": "mutation",
+	"id": "CONCEALED_FOUR",
+	"name": { "str": "Concealed Tails" },
+	"points": 0,
+	"visibility": 0,
+	"description": "You can feel a moderate strain as you focus on keeping your tails hidden.",
+	"types": [ "TAIL" ],
+	"valid": false,
+	"mana_regen_modifier": .8,
+	"mana_multiplier": .7,
+	"active": true,
+	"transform": {
+      "target": "FOX_FOURTAIL",
+      "msg_transform": "You breath a sigh of relief as your tails return.",
+      "active": false,
+      "moves": 100
+    }
   },
   {
     "type": "mutation",
@@ -212,7 +290,33 @@
     "dodge_modifier": 5,
     "mana_modifier": 700,
     "mana_regen_multiplier": 1.7,
-    "mana_multiplier": 1.7
+    "mana_multiplier": 1.7,
+	"active": true,
+	"transform": {
+      "target": "CONCEALED_FIVE",
+      "msg_transform": "You feel your magic fade as you withdraw your tails.",
+      "active": false,
+      "moves": 100
+    }
+  },
+  {
+	"type": "mutation",
+	"id": "CONCEALED_FIVE",
+	"name": { "str": "Concealed Tails" },
+	"points": 0,
+	"visibility": 0,
+	"description": "You can feel a moderate strain as you focus on keeping your tails hidden.",
+	"types": [ "TAIL" ],
+	"valid": false,
+	"mana_regen_modifier": .75,
+	"mana_multiplier": .6,
+	"active": true,
+	"transform": {
+      "target": "FOX_FIVETAIL",
+      "msg_transform": "You breath a sigh of relief as your tails return.",
+      "active": false,
+      "moves": 100
+    }
   },
   {
     "type": "mutation",
@@ -223,6 +327,7 @@
     "description": "You have six long, fluffy tails.  You can feel their power flowing through you.  Prevents wearing non-fabric pants.",
     "types": [ "TAIL" ],
     "prereqs": [ "FOX_FIVETAIL" ],
+	"changes_to": [ "FOX_SEVENTAIL" ],
     "category": [ "KITSUNE" ],
     "restricts_gear": [ "leg_hip_l", "leg_hip_r" ],
     "allowed_items": [ "ALLOWS_TAIL" ],
@@ -233,7 +338,173 @@
     "spells_learned": [ [ "kitsune_escape", 1 ] ],
     "mana_modifier": 800,
     "mana_regen_multiplier": 1.8,
-    "mana_multiplier": 1.8
+	"active": true,
+    "mana_multiplier": 1.8,
+	"transform": {
+      "target": "CONCEALED_SIX",
+      "msg_transform": "You feel your magic fade as you withdraw your tails.",
+      "active": false,
+      "moves": 100
+    }
+  },
+  {
+	"type": "mutation",
+	"id": "CONCEALED_SIX",
+	"name": { "str": "Concealed Tails" },
+	"points": 0,
+	"visibility": 0,
+	"description": "You can feel a heavy strain as you focus on keeping your tails hidden.",
+	"types": [ "TAIL" ],
+	"valid": false,
+	"mana_regen_modifier": .7,
+	"mana_multiplier": .5,
+	"active": true,
+	"transform": {
+      "target": "FOX_SIXTAIL",
+      "msg_transform": "You breath a sigh of relief as your tails return.",
+      "active": false,
+      "moves": 100
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "FOX_SEVENTAIL",
+    "name": { "str": "Seven Tailed" },
+    "points": 4,
+    "visibility": 10,
+    "description": "You have seven long, fluffy tails.  You can feel their power flowing through you.  Prevents wearing non-fabric pants.",
+    "types": [ "TAIL" ],
+    "prereqs": [ "FOX_SIXTAIL" ],
+	"changes_to": [ "FOX_EIGHTTAIL" ],
+    "category": [ "KITSUNE" ],
+    "restricts_gear": [ "leg_hip_l", "leg_hip_r" ],
+    "allowed_items": [ "ALLOWS_TAIL" ],
+    "allow_soft_gear": true,
+    "threshreq": [ "THRESH_FOX" ],
+    "social_modifiers": { "persuade": 20 },
+    "dodge_modifier": 5,
+    "mana_modifier": 900,
+    "mana_regen_multiplier": 1.8,
+	"active": true,
+    "mana_multiplier": 1.8,
+	"transform": {
+      "target": "CONCEALED_SEVEN",
+      "msg_transform": "You feel your magic fade as you withdraw your tails.",
+      "active": false,
+      "moves": 100
+    }
+  },
+  {
+	"type": "mutation",
+	"id": "CONCEALED_SEVEN",
+	"name": { "str": "Concealed Tails" },
+	"points": 0,
+	"visibility": 0,
+	"description": "You can feel a heavy strain as you focus on keeping your tails hidden.",
+	"types": [ "TAIL" ],
+	"valid": false,
+	"mana_regen_modifier": .65,
+	"mana_multiplier": .4,
+	"active": true,
+	"transform": {
+      "target": "FOX_SEVENTAIL",
+      "msg_transform": "You breath a sigh of relief as your tails return.",
+      "active": false,
+      "moves": 100
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "FOX_EIGHTTAIL",
+    "name": { "str": "Eight Tailed" },
+    "points": 4,
+    "visibility": 10,
+    "description": "You have eight long, fluffy tails.  You can feel their power flowing through you.  Prevents wearing non-fabric pants.",
+    "types": [ "TAIL" ],
+    "prereqs": [ "FOX_SEVENTAIL" ],
+	"changes_to": [ "FOX_NINETAIL" ],
+    "category": [ "KITSUNE" ],
+    "restricts_gear": [ "leg_hip_l", "leg_hip_r" ],
+    "allowed_items": [ "ALLOWS_TAIL" ],
+    "allow_soft_gear": true,
+    "threshreq": [ "THRESH_FOX" ],
+    "social_modifiers": { "persuade": 20 },
+    "dodge_modifier": 5,
+    "mana_modifier": 900,
+    "mana_regen_multiplier": 1.9,
+	"active": true,
+    "mana_multiplier": 1.9,
+	"transform": {
+      "target": "CONCEALED_EIGHT",
+      "msg_transform": "You feel your magic fade as you withdraw your tails.",
+      "active": false,
+      "moves": 100
+    }
+  },
+  {
+	"type": "mutation",
+	"id": "CONCEALED_EIGHT",
+	"name": { "str": "Concealed Tails" },
+	"points": 0,
+	"visibility": 0,
+	"description": "You can feel an immense strain as you focus on keeping your tails hidden.",
+	"types": [ "TAIL" ],
+	"valid": false,
+	"mana_regen_modifier": .6,
+	"mana_multiplier": .3,
+	"active": true,
+	"transform": {
+      "target": "FOX_EIGHTTAIL",
+      "msg_transform": "You breath a sigh of relief as your tails return.",
+      "active": false,
+      "moves": 100
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "FOX_NINETAIL",
+    "name": { "str": "Nine Tailed" },
+    "points": 4,
+    "visibility": 10,
+    "description": "You have nine long, fluffy tails.  You can feel enlightenment as their power flows through you.  Prevents wearing non-fabric pants.",
+    "types": [ "TAIL" ],
+    "prereqs": [ "FOX_EIGHTTAIL" ],
+    "category": [ "KITSUNE" ],
+    "restricts_gear": [ "leg_hip_l", "leg_hip_r" ],
+    "allowed_items": [ "ALLOWS_TAIL" ],
+    "allow_soft_gear": true,
+    "threshreq": [ "THRESH_FOX" ],
+    "social_modifiers": { "persuade": 20 },
+    "dodge_modifier": 5,
+    "mana_modifier": 1000,
+    "mana_regen_multiplier": 1.9,
+	"active": true,
+    "mana_multiplier": 1.9,
+	"transform": {
+      "target": "CONCEALED_NINE",
+      "msg_transform": "You feel your magic fade as you withdraw your tails.",
+      "active": false,
+      "moves": 100
+    }
+  },
+  {
+	"type": "mutation",
+	"id": "CONCEALED_NINE",
+	"name": { "str": "Concealed Tails" },
+	"points": 0,
+	"visibility": 0,
+	"description": "You can feel an immense strain as you focus on keeping your tails hidden.",
+	"types": [ "TAIL" ],
+	"valid": false,
+	"mana_regen_modifier": .55,
+	"mana_multiplier": .2,
+	"active": true,
+	"transform": {
+      "target": "FOX_NINETAIL",
+      "msg_transform": "You breath a sigh of relief as your tails return.",
+      "active": false,
+      "moves": 100
+    }
   },
   {
     "type": "mutation",
