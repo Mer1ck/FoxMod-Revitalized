@@ -27,7 +27,7 @@
 	    "u_message": "You feel a warmth grow inside you.",
 		"type": "mixed"
 	  },
-	  { "u_mutate_category" : "KITSUNE", "use_vitamins": false },
+	  { "run_eocs": [ "kitsune_trigger_bonus" ] },
 	  { "u_lose_effect" : "kitsune_pearl_effect" }
 	]
    },
@@ -71,7 +71,7 @@
 				"u_message": "You feel the heat building within you, burning away the a fog around your mind you never knew was there before.",
 				"type": "good"
 			},
-			{ "u_add_trait" : "THRESH_KITSUNE" }
+			{ "u_add_trait" : "THRESH_FOX" }
 		]
 	},
   {
@@ -83,7 +83,7 @@
 	"min": 0,
 	"max": 2500,
 	"rate": "1h",
-	"disease_excess": [ [ 100, 500 ], [ 501, 2199 ], [ 2200, 250 ] ]
+	"disease_excess": [ [ 100, 500 ], [ 501, 2199 ], [ 2200, 2500 ] ]
   },
   {
 	"type": "effect_type",
@@ -96,5 +96,87 @@
 	],
 	"max_intensity": 3,
 	"rating": "good"
+  },
+  {
+	  "id": "mutagen_kitsune",
+	  "copy-from": "mutagen_flavor",
+	  "type": "COMESTIBLE",
+	  "description": "A star pearl disolved into a mana potion. It may have a greater effect this way.",
+	  "name": { "str": "kitsune mutagen" },
+	  "looks_like": "mutagen",
+	  "use_action": {
+		  "type": "consume_drug",
+		  "activation_message": "You drink the kitsune mutagen.",
+		  "vitamins": [ [ "mutagen_kitsune", 225 ], [ "mutagen", 125 ] ]
+	  }
+  },
+  {
+	  "id": "iv_mutagen_kitsune",
+	  "copy-from": "iv_mutagen_flavor",
+	  "type": "COMESTIBLE",
+	  "name": { "str": "kitsune mutagenic primer" },
+	  "description": "A very concentrated form of mana potion using a greater star pearl as the primary ingredient.",
+	  "looks_like": "iv_mutagen",
+	  "color": "light_red",
+	  "use_action": {
+		  "type": "consume_drug",
+		  "activation_message": "You inject the kitsune mutagenic primer.",
+		  "tools_needed": { "syringe": -1 },
+		  "vitamins": [ [ "mutagen_kitsune", 450, 550 ] ]
+	  }
+  },
+  {
+	  "type": "recipe",
+	  "activity_level": "fake",
+	  "result": "mutagen_kitsune",
+	  "qualities": [ 
+		{ "id": "MAGIC_MUTAGEN", "level": 1 },
+		{ "id": "MANA_INFUSE", "level": 2 },
+		{ "id": "CONCENTRATE", "level": 1 },
+		{ "id": "SEPARATE", "level": 1 },
+		{ "id": "ANALYSIS", "level": 1 }
+	  ],
+	  "components": [
+		[[ "star_pearl", 1 ]],
+		[[ "mana_potion", 1 ]],
+		[[ "mana_infused_blood", 2 ]],
+		[[ "mutagen", 1]]
+		],
+	  "skill_used": "chemistry",
+	  "difficulty": 4,
+	  "skills_required": [ "spellcraft", 4 ],
+	  "proficiencies": [ { "proficiency": "prof_alchemy" } ],
+	  "time": "3 h",
+	  "batch_time_factors": [ 80, 5 ],
+	  "category": "CC_ENCHANTED",
+	  "subcategory": "CSC_ENCHANTED_POTIONS",
+	  "autolearn": true
+  },
+  {
+	"type": "recipe",
+    "activity_level": "fake",
+    "result": "iv_mutagen_kitsune",
+    "qualities": [ 
+		{ "id": "MAGIC_MUTAGEN", "level": 1 },
+		{ "id": "MANA_INFUSE", "level": 2 },
+		{ "id": "CONCENTRATE", "level": 1 } 
+	],
+    "components": [ 
+		[ [ "greater_star_pearl", 20 ] ],
+		[
+			[ "mana_potion", 4 ],
+			[ "mana_potion_greater", 1 ],
+			[ "mana_infused_blood", 6 ] 
+		] 
+	],
+    "skill_used": "chemistry",
+    "difficulty": 4,
+    "skills_required": [ "spellcraft", 6 ],
+    "proficiencies": [ { "proficiency": "prof_alchemy" } ],
+    "time": "4 h",
+    "batch_time_factors": [ 80, 5 ],
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_POTIONS",
+    "autolearn": true
   }
 ]
