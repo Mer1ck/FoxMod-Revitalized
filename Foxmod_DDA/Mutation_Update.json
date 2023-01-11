@@ -137,7 +137,10 @@
 		{ "id": "ANALYSIS", "level": 1 }
 	  ],
 	  "components": [
-		[[ "star_pearl", 1 ]],
+		[
+			[ "star_pearl", 1 ],
+			[ "synth_star_pearl", 1 ]
+		],
 		[[ "mana_potion", 1 ]],
 		[[ "mana_infused_blood", 2 ]],
 		[[ "mutagen", 1]]
