@@ -1,0 +1,13 @@
+[
+{
+	"type": "item_group",
+	"id": "alchemy_items",
+	"copy-from": "alchemy_items",
+	"extend": {
+		"items": [
+			[ "star_pearl", 5 ],
+			[ "greater_star_pearl", 1 ]
+		]
+	}
+}
+]
