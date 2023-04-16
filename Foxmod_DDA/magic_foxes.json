@@ -41,7 +41,7 @@
 	  "id": "synth_star_pearl",
 	  "type": "GENERIC",
 	  "name": { "str": "synthetic star pearl" },
-	  "description": "A reproduction of a pearl tresured by kitsune. It seems to be lacking in something.",
+	  "description": "A reproduction of a pearl treasured by kitsune. It seems to be lacking in something.",
 	  "price": 1000,
 	  "price_postapoc": 5,
 	  "category": "other",
