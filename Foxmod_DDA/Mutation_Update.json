@@ -115,7 +115,7 @@
 	  "copy-from": "iv_mutagen_flavor",
 	  "type": "COMESTIBLE",
 	  "name": { "str": "kitsune mutagenic primer" },
-	  "description": "A very concentrated form of mana potion using a greater star pearl as the primary ingredient.",
+	  "description": "A very concentrated form of mana potion using star pearls as the primary ingredient.",
 	  "looks_like": "iv_mutagen",
 	  "color": "light_red",
 	  "use_action": {
@@ -165,7 +165,11 @@
 		{ "id": "CONCENTRATE", "level": 1 } 
 	],
     "components": [ 
-		[ [ "greater_star_pearl", 1 ] ],
+		[ 
+			[ "greater_star_pearl", 1 ],
+			[ "star_pearl", 5 ],
+			[ "synth_star_pearl", 5]
+		],
 		[
 			[ "mana_potion", 4 ],
 			[ "mana_potion_greater", 1 ],
