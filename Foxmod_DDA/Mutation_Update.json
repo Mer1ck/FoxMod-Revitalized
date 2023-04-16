@@ -165,7 +165,7 @@
 		{ "id": "CONCENTRATE", "level": 1 } 
 	],
     "components": [ 
-		[ [ "greater_star_pearl", 20 ] ],
+		[ [ "greater_star_pearl", 1 ] ],
 		[
 			[ "mana_potion", 4 ],
 			[ "mana_potion_greater", 1 ],
