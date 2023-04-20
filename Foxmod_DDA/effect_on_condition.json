@@ -1,5 +1,23 @@
 [
 	{
+		"type": "effect_type",
+		"id": "kitsune_pearl_effect",
+		"max_duration": "10s",
+		"name": [ "Star Pearl" ],
+		"desc": [
+			"Just used for mutations. You shouldn't see this."
+		]
+	},
+	{
+		"type": "effect_type",
+		"id": "kitsune_gpearl_effect",
+		"max_duration": "10s",
+		"name": [ "Greater Star Pearl" ],
+		"desc": [
+		"Just used for mutations. You shouldn't see this."
+		]
+	},
+	{
 		"type": "effect_on_condition",
 		"id": "kitsune_eoc",
 		"recurrence": [ "1 s", "1 s" ],

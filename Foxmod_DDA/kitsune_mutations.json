@@ -9,24 +9,6 @@
 	"vitamin": "mutagen_kitsune"
   },
   {
-	"type": "effect_type",
-	"id": "kitsune_pearl_effect",
-	"max_duration": "10s",
-	"name": [ "Star Pearl" ],
-	"desc": [
-		"Just used for mutations. You shouldn't see this."
-	]
-  },
-  {
-	"type": "effect_type",
-	"id": "kitsune_gpearl_effect",
-	"max_duration": "10s",
-	"name": [ "Greater Star Pearl" ],
-	"desc": [
-		"Just used for mutations. You shouldn't see this."
-	]
-  },
-  {
 	"id": "mutagen_kitsune",
 	"type": "vitamin",
 	"vit_type": "counter",
