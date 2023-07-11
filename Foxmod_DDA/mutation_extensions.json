@@ -54,15 +54,9 @@
     "extend": { "category": [ "KITSUNE" ] }
   },
   {
-    "type": "mutation",
-    "id": "SKIN_ROUGH",
-    "copy-from": "SKIN_ROUGH",
-    "extend": { "category": [ "KITSUNE" ] }
-  },
-  {
 	"type": "mutation",
-	"id": "PATCHFUR",
-	"copy-from": "PATCHFUR",
+	"id": "HIRSUTE",
+	"copy-from": "HIRSUTE",
 	"extend": { "category": [ "KITSUNE" ] }
   },
   {
